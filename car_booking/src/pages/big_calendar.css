@@ -1,0 +1,57 @@
+/* Default styles for larger screens */
+.fc-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fc-button {
+  background-color: #6b46c1;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: background-color 0.3s ease;
+}
+
+.fc-button:hover {
+  background-color: #805ad5;
+}
+
+.fc-button-active {
+  background-color: #4c2c96;
+}
+
+.fc-button:not(.fc-button-active) {
+  background-color: #e9d8fd;
+  color: #6b46c1;
+}
+
+.fc-button:not(.fc-button-active):hover {
+  background-color: #d6bcfa;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .fc-toolbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .fc-toolbar .fc-left,
+  .fc-toolbar .fc-center,
+  .fc-toolbar .fc-right {
+    margin-bottom: 10px;
+  }
+
+  .fc-button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .fc-header-toolbar {
+    flex-wrap: wrap;
+  }
+}

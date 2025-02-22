@@ -1,0 +1,30 @@
+/* Sticky Navbar */
+/* Ensure the sidebar appears above the calendar */
+/* .sidebar {
+  z-index: 50;
+}
+
+/* Backdrop for small screens */
+.backdrop {
+  z-index: 40;
+} */
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 40; /* Ensure it stays above other content */
+}
+
+/* Sticky Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh; /* Full height */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}
+
+/* Ensure the calendar takes up the remaining space */
+.calendar-container {
+  flex: 1;
+  overflow-y: auto; /* Allow scrolling */
+}

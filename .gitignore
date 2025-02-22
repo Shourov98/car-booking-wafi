@@ -1,0 +1,48 @@
+# Global Ignore
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node.js (Frontend - car_booking)
+car_booking/node_modules/
+car_booking/.vite/
+car_booking/.next/
+car_booking/.nuxt/
+car_booking/.parcel-cache/
+car_booking/.turbo/
+car_booking/dist/
+
+# Environment files
+car_booking/.env
+car_booking/.env.local
+car_booking/.env.*.local
+
+# Dependencies
+car_booking/package-lock.json
+car_booking/yarn.lock
+car_booking/pnpm-lock.yaml
+
+# Compiled build output
+car_booking/.output/
+car_booking/build/
+
+# VS Code settings
+.vscode/
+
+# Backend - .NET Core (Wafi.SampleTest)
+Wafi.SampleTest/bin/
+Wafi.SampleTest/obj/
+Wafi.SampleTest/.vs/
+
+# Entity Framework Migrations
+Wafi.SampleTest/Migrations/
+
+# Environment files
+Wafi.SampleTest/appsettings.Development.json
+Wafi.SampleTest/secrets.json
