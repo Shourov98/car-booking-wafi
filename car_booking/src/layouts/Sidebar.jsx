@@ -1,4 +1,4 @@
-// src/layouts/Sidebar.jsx
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaCalendarAlt, FaProjectDiagram } from 'react-icons/fa';

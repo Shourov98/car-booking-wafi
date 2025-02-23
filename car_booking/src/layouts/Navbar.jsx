@@ -1,4 +1,4 @@
-// src/layouts/Navbar.jsx
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FiBell, FiMessageSquare, FiUser, FiLogIn, FiLogOut } from 'react-icons/fi';
@@ -7,7 +7,7 @@ import { FaPlus, FaBars } from 'react-icons/fa';
 const Navbar = ({ authenticated, setAuthenticated, setShowModal, toggleSidebar }) => {
   const [userMenuVisible, setUserMenuVisible] = useState(false);
 
-  // Handle click outside UserMenu to close it
+  // Handle outside click 
   const handleOutsideClick = (e) => {
     if (e.target.closest('.user-menu') === null) {
       setUserMenuVisible(false);
@@ -42,19 +42,17 @@ const Navbar = ({ authenticated, setAuthenticated, setShowModal, toggleSidebar }
 
       {/* Right Section: Notification, Message, Profile */}
       <div className="flex items-center space-x-6 md:space-x-4 sm:space-x-2">
-        {/* Notification */}
+        
         <div className="flex items-center space-x-2 hover:bg-gray-400 p-2 rounded-md cursor-pointer">
           <FiBell size={24} />
           <span className="hidden lg:block">Notification</span>
         </div>
 
-        {/* Message */}
         <div className="flex items-center space-x-2 hover:bg-gray-400 p-2 rounded-md cursor-pointer">
           <FiMessageSquare size={24} />
           <span className="hidden lg:block">Message</span>
         </div>
 
-        {/* Profile */}
         {authenticated ? (
           <div
             className="relative user-menu flex items-center space-x-2 hover:bg-gray-400 p-2 rounded-md cursor-pointer"
